@@ -38,7 +38,7 @@ class User
     public static function getInstance()
     {
         if (!self::$instance) {
-            self::$instance = new User('chattochatbot');
+            self::$instance = new User('<YOU APP ID>');
         }
         return self::$instance;
     }
