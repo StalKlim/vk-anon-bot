@@ -1,0 +1,11 @@
+application: chattochatbot
+runtime: php55
+version: 1
+api_version: 1
+
+handlers:
+- url: /vk-api
+  script: process.php
+  login: admin
+- url: /.*
+  script: main.php

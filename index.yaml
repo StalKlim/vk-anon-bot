@@ -1,0 +1,15 @@
+indexes:
+- kind: VkUser
+  properties:
+  - name: stage
+    direction: asc
+  - name: sex
+    direction: asc
+  - name: id
+    direction: asc
+- kind: VkUser
+  properties:
+  - name: stage
+    direction: asc
+  - name: id
+    direction: asc
