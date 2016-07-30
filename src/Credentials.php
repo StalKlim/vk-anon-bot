@@ -3,7 +3,7 @@
 class Credentials
 {
     protected static $map = [
-        29424928 => [
+        <GROUP_ID> => [
             'key' => '<SECRET KEYY>',
             'token' => '<BOT API KEY WITH MESSAGE ACCESS>',
             'sex' => true

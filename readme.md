@@ -1,3 +1,35 @@
 1 Идем на https://cloud.google.com/ и создаем аккаунт если еще не создан
-2 Открывает Tools Development
-Automatically mirror from GitHub or Bitbucket
+
+2 Открывает Tools Development / Разработка
+
+2.1 Создаем проект если он еще не создан
+
+3 Нажимаем "Попробовать"
+
+4 Выбираем первый пункт
+
+5 Открываем Google Cloud Shell Консоль
+
+6 Выполняем первую команду, на вопросв отвечаем 1 и еще раз 1
+
+7 Выполняем git clone https://github.com/stels-cs/vk-anon-bot.git && cd vk-anon-bot
+
+8 Выполняем вторую команду 
+
+9 Выполняем 3 команду
+
+10 Открваем вкладку Исходный код и редактркем файлы src/Credentials.php и app.yaml
+в app.yaml надо в первой строке изменить chattochatbot на идентификатор вашего проекта (вверку в выпадающем списке есть)
+
+11 После того как все это отредактировани надо нажать "Зафикстировать изменения" (Commit)
+
+12 Открваем Google Cloud Shell
+cd ~/vk-anon-bot/
+git pull google master
+php composer.phar install -o --no-dev
+appcfg.py update .
+
+13 Потом открываем App Engine
+
+14 Переходим в "Сервисы" и открваем сервис default
+Копируем адрес из адресной строки и вставляем его в управление ссобществом как адрес callback сервера
